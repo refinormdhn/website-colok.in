@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Loker Mandiri | Colok.in Power Systems</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-highest": "#273647",
+                    "background": "#051424",
+                    "on-primary-fixed-variant": "#2a4386",
+                    "outline": "#8e909c",
+                    "on-error": "#690005",
+                    "tertiary-container": "#323a4f",
+                    "error": "#ffb4ab",
+                    "surface-dim": "#051424",
+                    "on-primary-container": "#8aa2ec",
+                    "surface-container-lowest": "#010f1f",
+                    "inverse-on-surface": "#233143",
+                    "on-primary-fixed": "#00174b",
+                    "inverse-primary": "#435ba0",
+                    "tertiary-fixed": "#dae2fd",
+                    "secondary-fixed": "#d6ef2b",
+                    "on-secondary-fixed-variant": "#424b00",
+                    "on-surface-variant": "#c5c6d2",
+                    "tertiary": "#bec6e0",
+                    "surface-container-high": "#1c2b3c",
+                    "surface-bright": "#2c3a4c",
+                    "secondary": "#dbf532",
+                    "inverse-surface": "#d4e4fa",
+                    "surface": "#051424",
+                    "on-tertiary-container": "#9ca4bd",
+                    "on-error-container": "#ffdad6",
+                    "on-secondary": "#2d3400",
+                    "surface-tint": "#b4c5ff",
+                    "on-secondary-container": "#505c00",
+                    "secondary-fixed-dim": "#bad200",
+                    "error-container": "#93000a",
+                    "primary-fixed-dim": "#b4c5ff",
+                    "on-tertiary-fixed": "#131b2e",
+                    "on-tertiary-fixed-variant": "#3f465c",
+                    "secondary-container": "#c0d800",
+                    "tertiary-fixed-dim": "#bec6e0",
+                    "primary-fixed": "#dbe1ff",
+                    "on-tertiary": "#283044",
+                    "surface-variant": "#273647",
+                    "primary": "#b4c5ff",
+                    "outline-variant": "#444650",
+                    "on-secondary-fixed": "#191e00",
+                    "on-surface": "#d4e4fa",
+                    "primary-container": "#1b3679",
+                    "surface-container-low": "#0d1c2d",
+                    "on-primary": "#0d2b6f",
+                    "surface-container": "#122131",
+                    "on-background": "#d4e4fa"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "xs": "8px",
+                    "md": "24px",
+                    "sm": "16px",
+                    "lg": "40px",
+                    "xl": "64px",
+                    "gutter": "20px",
+                    "base": "4px",
+                    "margin": "32px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Space Grotesk"],
+                    "headline-lg": ["Space Grotesk"],
+                    "body-lg": ["Space Grotesk"],
+                    "label-sm": ["Space Grotesk"],
+                    "headline-xl": ["Space Grotesk"],
+                    "body-md": ["Space Grotesk"]
+            },
+            "fontSize": {
+                    "headline-md": ["24px", {"lineHeight": "1.3", "letterSpacing": "0", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "headline-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<header class="bg-surface-container-lowest fixed top-0 w-full z-50 border-b border-outline-variant">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-black tracking-tighter font-headline-md">
+<img alt="Colok.in Logo" class="w-auto object-contain h-16" src="../assets/logocolokin.png"/>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-label-sm uppercase tracking-wider text-outline hover:text-secondary transition-colors duration-200" href="index.html">Beranda</a>
+<div class="relative group">
+  <button class="font-label-sm uppercase tracking-wider text-secondary border-b-2 border-secondary pb-1 flex items-center gap-2">
+    Produk
+    <span class="material-symbols-outlined text-[16px] group-hover:rotate-180 transition-transform duration-200">expand_more</span>
+  </button>
+  <div class="absolute left-0 mt-0 w-48 bg-surface-container border border-outline-variant rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 pt-2">
+    <a class="block px-4 py-3 font-label-sm uppercase tracking-wider text-outline hover:text-secondary hover:bg-surface-container-high transition-colors duration-200 first:rounded-t-lg" href="kabel.html">Kabel Ekstensi</a>
+    <a class="block px-4 py-3 font-label-sm uppercase tracking-wider text-secondary bg-surface-container-high hover:text-on-surface transition-colors duration-200" href="loker.html">Loker Mandiri</a>
+    <a class="block px-4 py-3 font-label-sm uppercase tracking-wider text-outline hover:text-secondary hover:bg-surface-container-high transition-colors duration-200 last:rounded-b-lg" href="aplikasi.html">Aplikasi</a>
+  </div>
+</div>
+<a class="font-label-sm uppercase tracking-wider text-outline hover:text-secondary transition-colors duration-200" href="cara_penggunaan.html">Cara Penggunaan</a>
+</nav>
+<button onclick="window.location.href='cara_penggunaan.html'" class="bg-secondary text-on-secondary px-6 py-2 font-label-md uppercase tracking-wider font-bold hover:opacity-90 active:scale-95 transition-all">
+                Jadi Pengguna
+            </button>
+</div>
+</header>
+<main class="pt-32 pb-20 max-w-7xl mx-auto px-6">
+<!-- Breadcrumb & Title -->
+<div class="mb-12">
+<div class="flex items-center gap-2 text-outline mb-4">
+<span class="font-label-sm uppercase">Infrastruktur</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<span class="font-label-sm uppercase text-secondary">Katalog Komponen Daya</span>
+</div>
+<h1 class="font-headline-xl text-on-surface">Solusi Infrastruktur Energi Terpadu</h1>
+</div>
+<div class="space-y-16">
+<!-- Product Section: Loker Mandiri -->
+<div class="bg-surface-container border border-outline-variant overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-2">
+<div class="aspect-video lg:aspect-auto bg-surface-container-highest flex items-center justify-center p-xl overflow-hidden">
+<img alt="Loker Mandiri Render" class="w-full h-full object-contain hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/ADBb0uh4slcz1Bq7vrwkkFtiMlZyk13NqBF0IRW83DLS48iDaDgahBx35M8y1H4TVXmA4GSugkYkOngrD8yMm5MPLBKcCNUsRjWrUNBzyaCjhFjsa7gKmtIm4A0UNrq8OXIEorUnYLcUJBtFTvTB7r5nSZ70zt6K475rjR0aSOBXCZvFUxmrdOlhi4LzXYwVJdAYqyFzGCdx5QZj4avDXCSMgOA-n0jP9r3be4aZPxtJ6JU74xIFu_Ua6ND9tkc8mrf7NnL6D_mYVJk"/>
+</div>
+<div class="p-xl space-y-8 flex flex-col justify-center">
+<div>
+<h2 class="font-headline-lg text-headline-lg mb-4 text-on-surface">Seri Loker Colok.in Mandiri</h2>
+<p class="font-body-md text-on-surface-variant leading-relaxed">Solusi penyimpanan cerdas dan manajemen pengisian daya otomatis untuk perangkat elektronik, dirancang untuk keamanan tingkat tinggi dan kemudahan akses di ruang publik maupun perkantoran.</p>
+</div>
+<div class="grid grid-cols-2 gap-x-12 gap-y-6">
+<div>
+<p class="font-label-sm text-label-sm uppercase text-outline mb-1">Konfigurasi</p>
+<p class="font-body-lg font-bold text-on-surface">10 Compartments</p>
+</div>
+<div>
+<p class="font-label-sm text-label-sm uppercase text-outline mb-1">Sistem</p>
+<p class="font-body-lg font-bold text-on-surface">Smart Digital Key (QR/NFC)</p>
+</div>
+<div class="col-span-2">
+<p class="font-label-sm text-label-sm uppercase text-outline mb-1">Keamanan</p>
+<p class="font-body-lg font-bold text-on-surface">IoT Cloud Sync &amp; Real-time Monitoring</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Call to Action -->
+<div class="flex flex-col md:flex-row items-center justify-between gap-gutter p-xl border-t-2 border-secondary mt-8 bg-surface-container-low">
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface">Siap untuk penerapan tegangan tinggi?</h4>
+<p class="font-body-md text-on-surface-variant">Minta dokumentasi teknis atau kunjungan lokasi dari teknisi lapangan kami.</p>
+</div>
+<div class="flex gap-md w-full md:w-auto">
+<button class="flex-1 md:flex-none px-xl py-md border-2 border-secondary text-secondary font-['Space_Grotesk'] text-sm uppercase font-bold hover:bg-secondary hover:text-on-secondary transition-colors">
+                        Lihat Skematik
+                    </button>
+<button class="flex-1 md:flex-none px-xl py-md bg-secondary text-on-secondary font-['Space_Grotesk'] text-sm uppercase font-bold hover:opacity-90 active:scale-95 transition-all">
+                        Ajukan Pertanyaan
+                    </button>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest w-full py-16 px-6 border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<div class="space-y-6">
+<div class="text-lg font-bold text-secondary font-['Space_Grotesk']">
+<img alt="Colok.in Logo" class="w-auto object-contain h-12" src="../assets/logocolokin.png"/>
+</div>
+<p class="font-['Space_Grotesk'] text-xs uppercase tracking-tight text-outline">
+                    © 2024 Colok.in Power Systems. Hak cipta dilindungi undang-undang.
+                </p>
+</div>
+<div class="space-y-4">
+<h5 class="font-['Space_Grotesk'] text-xs uppercase font-black text-secondary">Hubungkan</h5>
+<nav class="flex flex-col gap-2">
+<a class="font-['Space_Grotesk'] text-xs uppercase tracking-tight text-outline hover:text-secondary underline underline-offset-4 transition-all" href="#">Facebook</a>
+<a class="font-['Space_Grotesk'] text-xs uppercase tracking-tight text-outline hover:text-secondary underline underline-offset-4 transition-all" href="#">Instagram</a>
+<a class="font-['Space_Grotesk'] text-xs uppercase tracking-tight text-outline hover:text-secondary underline underline-offset-4 transition-all" href="#">LinkedIn</a>
+</nav>
+</div>
+<div class="space-y-4">
+<h5 class="font-['Space_Grotesk'] text-xs uppercase font-black text-secondary">Informasi</h5>
+<nav class="flex flex-col gap-2">
+<a class="font-['Space_Grotesk'] text-xs uppercase tracking-tight text-outline hover:text-secondary underline underline-offset-4 transition-all" href="#">Info Kontak</a>
+<a class="font-['Space_Grotesk'] text-xs uppercase tracking-tight text-outline hover:text-secondary underline underline-offset-4 transition-all" href="#">Kebijakan Privasi</a>
+</nav>
+</div>
+<div class="space-y-6">
+<h5 class="font-['Space_Grotesk'] text-xs uppercase font-black text-secondary">Buletin</h5>
+<div class="flex gap-0 border-b border-outline">
+<input class="bg-transparent border-none py-2 text-xs font-['Space_Grotesk'] w-full focus:ring-0 text-on-surface placeholder:text-outline-variant" placeholder="EMAIL@ANDA.COM" type="email"/>
+<button class="material-symbols-outlined text-secondary">arrow_forward</button>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
